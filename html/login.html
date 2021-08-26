@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <title>فروشگاه اینترنتی</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+<div class="main-component" id="page_menu">
+    <div>
+        <button id="enter">
+            <a href="login.html">ورود / ثبت نام</a>
+        </button>
+    </div>
+    <!--    <div>-->
+    <!--      <div class="dropdown">-->
+    <!--        <button class="dropbtn">عرفان</button>-->
+    <!--        <div class="dropdown-content">-->
+    <!--          <a href="#">پروفایل</a>-->
+    <!--          <a href="#">خروج از حساب</a>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </div>-->
+    <div></div>
+    <div></div>
+
+    <div class="menu-item">پشتیبانی</div>
+    <div class="menu-item">تماس با ما</div>
+
+    <div id="products_link" class="menu-item">
+        <a href="../index.html#products_section">محصولات</a>
+    </div>
+    <div id="first_page_link" class="menu-item">
+        <a href="../index.html">صفحه اول</a>
+    </div>
+
+    <div id="logo">فروشگاه</div>
+</div>
+<div class="main-component" id="page_content">
+    <div>
+        <p id="page_title">فروشگاه - ورود</p>
+        <form>
+            <div class="form_input">
+                <input type="email" id="email_unval" class="input_text" placeholder=" ایمیل خود را وارد کنید...">
+                <label for="email_unval">ایمیل</label>
+            </div>
+            <p id="email_hint"></p>
+            <br>
+            <div class="form_input">
+                <input type="password" id="password_unval" class="input_text" minlength="6"
+                       placeholder="رمز عبور خود را وارد کنید...">
+                <label for="password_unval">رمز عبور</label>
+            </div>
+            <p id="password_hint"></p>
+            <input id="submit_button" type="submit" value="ورود">
+            <br><br>
+            <a href="register.html">اگر حسابی ثبت نکرده اید در این جا ثبت نام کنید</a>
+        </form>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <p id="modal_text"></p>
+        </div>
+    </div>
+
+</div>
+<div class="main-component" id="page_footer">
+    تمامی حقوق برای توسعه دهنده محفوط است
+</div>
+
+<script src="../js/login.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8">
+    <title>فروشگاه اینترنتی</title>
+    <link rel="stylesheet" href="css/main_page.css">
+</head>
+
+<body>
+<!-- menu -->
+<div class="main-component" id="page_menu">
+<!--    left button -->
+    <div id="unauth_button">
+        <button id="enter">
+            <a href="html/login.html">ورود / ثبت نام</a>
+        </button>
+    </div>
+    <div id="user_auth_button">
+        <div class="dropdown">
+            <button id="user_name_button" class="dropbtn"></button>
+            <div class="dropdown-content">
+                <a href="html/user_profile.html">پروفایل</a>
+                <a id="user_signout_link" href="html/login.html">خروج از حساب</a>
+            </div>
+        </div>
+    </div>
+    <div id="admin_auth_button">
+        <div class="dropdown">
+            <button id="admin_name_button" class="dropbtn"></button>
+            <div class="dropdown-content">
+                <a href="html/admin_profile.html">پروفایل</a>
+                <a id="admin_signout_link" href="html/login.html">خروج از حساب</a>
+            </div>
+        </div>
+    </div>
+
+<!--    free space -->
+    <div></div>
+    <div></div>
+
+<!--    menu items -->
+    <div class="menu-item">پشتیبانی</div>
+    <div class="menu-item">تماس با ما</div>
+
+    <div id="products_link" class="menu-item">
+        <a href="index.html#products_section">محصولات</a>
+    </div>
+    <div id="first_page_link" class="menu-item">
+        <a href="index.html">صفحه اول</a>
+    </div>
+
+<!--    webpage name -->
+    <div id="logo">فروشگاه</div>
+</div>
+
+<!-- content -->
+<div class="main-component" id="page_content">
+<!--    search part  -->
+    <div id="page_content_top">
+        <div><p></p></div>
+        <div><label id="search_box_label" for="search_box">..در محصولات سایت جستجو کنید</label></div>
+        <div><input type="search" id="search_box" placeholder="...نام محصول خود را وارد کنید"></div>
+        <div><input type="submit" id="search_submit" value="جستجو  کنید"></div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/clock.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/3.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+<!--    sort option part -->
+    <div id="page_content_center">
+        <div>
+            <div>:مرتب سازی بر اساس</div>
+            <div>
+                <button type="button" id="sold_high" class="option_selector option_selected">بیشترین فروش</button>
+            </div>
+            <div>
+                <button type="button" id="price_high" class="option_selector">بیشترین قیمت</button>
+            </div>
+            <div>
+                <button type="button" id="price_low" class="option_selector">کمترین قیمت</button>
+            </div>
+            <div>
+                <button type="button" id="newest" class="option_selector">جدید ترین</button>
+            </div>
+        </div>
+    </div>
+
+<!--    product part -->
+    <div id="page_content_bottom">
+        <div id="page_content_bottom_left">
+            <div id="products_section">
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+                <div class="product_box">
+                    <img class="product_image"/>
+                    <p class="product_name"></p>
+                    <p class="product_category"></p>
+                    <hr>
+                    <div class="product_bottom">
+                        <button type="button" class="button_buy">خرید محصول</button>
+                        <p class="product_price"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="paging_section">
+                <input type="button" id="previous" value="صفحه قبل"/>
+                <input type="button" id="page_num_1" value="1"/>
+                <input type="button" id="page_num_2" value="2"/>
+                <input type="button" id="page_num_3" value="3"/>
+                <input type="button" id="page_num_4" value="4"/>
+                <input type="button" id="page_num_5" value="5"/>
+                <input type="button" id="page_num_6" value="6"/>
+                <input type="button" id="page_num_7" value="7"/>
+                <input type="button" id="page_num_8" value="8"/>
+                <input type="button" id="page_num_9" value="9"/>
+                <input type="button" id="page_num_10" value="10"/>
+                <input type="button" id="next" value="صفحه بعد"/>
+            </div>
+        </div>
+        <div id="page_content_bottom_right">
+            <div id="page_content_bottom_right_top">
+                <p>دسته بندی ها</p>
+                <hr>
+                <form>
+                    <label id="lab1" for="classification1"></label>
+                    <input type="checkbox" id="classification1">
+                    <br>
+                    <label id="lab2" for="classification2"></label>
+                    <input type="checkbox" id="classification2">
+                    <br>
+                    <label id="lab3" for="classification3"></label>
+                    <input type="checkbox" id="classification3">
+                    <br>
+                    <label id="lab4" for="classification4"></label>
+                    <input type="checkbox" id="classification4">
+                    <br>
+                    <label id="lab5" for="classification5"></label>
+                    <input type="checkbox" id="classification5">
+                    <br>
+                    <label id="lab6" for="classification6"></label>
+                    <input type="checkbox" id="classification6">
+                    <br>
+                    <label id="lab7" for="classification7"></label>
+                    <input type="checkbox" id="classification7">
+                    <br>
+                    <label id="lab8" for="classification8"></label>
+                    <input type="checkbox" id="classification8">
+                    <br>
+                    <label id="lab9" for="classification9"></label>
+                    <input type="checkbox" id="classification9">
+                    <br>
+                    <label id="lab10" for="classification10"></label>
+                    <input type="checkbox" id="classification10">
+                </form>
+            </div>
+
+            <div id="page_content_bottom_right_temp"></div>
+        </div>
+    </div>
+</div>
+
+<!-- modal buy -->
+<div id="buy_modal" class="modal">
+    <div id="buy_modal_content" class="modal-content">
+        <span id="buy_span" class="close">X</span>
+
+        <p id="product_name"></p>
+
+        <input type="number" min="1" max="5" id="buy_number_box">
+        <label id="buy_label" for="buy_number_box">تعداد </label>
+
+        <p id="final_price"></p>
+
+        <button type="button" id="buy_button">خرید</button>
+    </div>
+</div>
+
+<!-- modal buy status-->
+<div id="buy_status" class="modal">
+    <div class="modal-content">
+        <p id="buy_message"></p>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="main-component" id="page_footer">
+    تمامی حقوق برای توسعه دهنده محفوط است
+</div>
+
+<script src="js/main_page.js"></script>
+</body>
+</html>

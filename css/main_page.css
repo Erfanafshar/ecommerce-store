@@ -1,0 +1,458 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.main-component {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1280px;
+}
+
+#page_menu {
+    background-color: white;
+    height: 65px;
+    display: flex;
+}
+
+#logo {
+    font-size: 120%;
+    font-weight: bold;
+    color: rgb(255, 105, 180);
+}
+
+.menu-item > a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+#page_menu > div {
+    width: 100px;
+    margin: 25px;
+    text-align: center;
+}
+
+#enter {
+    border: yellow solid 2px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+}
+
+#enter:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#enter > a {
+    color: black;
+    text-decoration: none;
+}
+
+#unauth_button {
+    display: none;
+}
+
+#user_auth_button {
+    display: none;
+}
+
+#admin_auth_button {
+    display: none;
+}
+
+/* drop down menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+.dropbtn {
+    border: yellow solid 2px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(225,225,225);
+    width: 120px;
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.dropdown:hover{
+    background-color: rgb(225,225,225);
+}
+
+
+#page_footer {
+    display: flex;
+    background-color: rgb(49, 52, 54);
+    color: rgb(114, 120, 125);
+    height: 70px;
+}
+
+#page_content {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+}
+
+#page_content > div {
+    width: 100%;
+    text-align: center;
+}
+
+#page_content_top {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    background-color: orange;
+    align-content: space-between;
+}
+
+#page_content_top > div {
+    margin-top: 35px;
+}
+
+#search_box_label {
+    color: white;
+    font-size: 200%;
+}
+
+#search_box {
+    margin-top: 5px;
+    border-radius: 24px;
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    flex-grow: 5;
+}
+
+#search_submit {
+    background-color: yellow;
+    color: black;
+    border-radius: 24px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#search_submit:hover {
+    box-shadow: 2px 2px yellow;
+    cursor: pointer;
+}
+
+#page_content_center {
+    flex-shrink: 0;
+    background-color: lightgray;
+}
+
+#page_content_center > div {
+    background-color: white;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    width: 98%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#page_content_center > div > div {
+    margin: 15px;
+}
+
+.option_selector {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.option_selector:hover {
+    cursor: pointer;
+}
+
+.option_selected {
+    background-color: rgb(0, 157, 255);
+    color: white;
+    border: 1px solid white;
+    border-radius: 24px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.option_selected:hover {
+    cursor: pointer;
+}
+
+#page_content_bottom {
+    background-color: lightgray;
+    flex-shrink: 0;
+    flex-direction: row;
+    display: flex;
+}
+
+#page_content_bottom_left {
+    background-color: lightgray;
+    flex: 0 0 980px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products_section > div > div > button:hover {
+    cursor: pointer;
+}
+
+#paging_section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 970px;
+    height: 70px;
+    padding-top: 30px;
+}
+
+#paging_section > input {
+    margin: 10px;
+    width: 60px;
+    height: 30px;
+    border-radius: 24px;
+    background-color: blue;
+}
+
+#paging_section > input:hover {
+    color: white;
+    box-shadow: 3px 3px white;
+    cursor: pointer;
+}
+
+.product_box {
+    width: 285px;
+    height: 420px;
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px gray;
+}
+
+.product_image {
+    width: 150px;
+    height: 150px;
+}
+
+.product_name {
+    font-size: 120%;
+    text-align: right;
+}
+
+.product_category {
+    color: gray;
+    margin-bottom: 90px;
+    text-align: right;
+}
+
+.product_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product_price {
+    direction: rtl;
+    margin-top: 35px;
+}
+
+.button_buy {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 24px;
+    width: 120px;
+    height: 40px;
+    box-shadow: 3px 3px gray;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+    margin-top: 25px;
+}
+
+#page_content_bottom_right {
+    display: flex;
+    flex: 0 0 300px;
+    flex-direction: column;
+    padding: 5px 0 15px 0;
+}
+
+#page_content_bottom_right_top {
+    flex-grow: 1;
+    background-color: white;
+    margin-bottom: 15px;
+    text-align: right;
+    box-shadow: 3px 3px gray;
+}
+
+#page_content_bottom_right_top > p {
+    margin-right: 10px;
+}
+
+#classification1 {
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+form > label {
+    display: none;
+}
+
+form > input {
+    display: none;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+#page_content_bottom_right_temp {
+    flex-grow: 10;
+}
+
+/*############################### js*/
+
+.mySlides {
+    display: none;
+}
+
+.fade > img {
+    vertical-align: middle;
+    width: 400px;
+    height: 200px;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/*######################*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    height: 100px;
+    border-radius: 24px;
+}
+
+#buy_modal_content {
+    height: 300px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    padding-left: 420px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*##################*/
+/* modal internal parts */
+#product_name {
+    margin: 0px 0px 40px 210px;
+}
+
+#buy_number_box {
+    margin: 0px 0px 40px 150px;
+}
+
+#buy_label {
+    margin: 0px 0px 40px 40px;
+}
+
+#final_price {
+    margin: 0px 0px 40px 130px;
+}
+
+#buy_button {
+    width: 80px;
+    height: 40px;
+    border-radius: 24px;
+    background-color: blue;
+    color: white;
+    margin: 0px 0px 40px 170px;
+}
+
+#buy_message {
+    text-align: center;
+}

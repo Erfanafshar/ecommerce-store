@@ -1,0 +1,397 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.main-component {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1280px;
+}
+
+#page_menu {
+    background-color: white;
+    height: 65px;
+    display: flex;
+}
+
+#logo {
+    font-size: 120%;
+    font-weight: bold;
+    color: rgb(255, 105, 180);
+}
+
+#page_menu > div {
+    width: 100px;
+    margin: 25px;
+    text-align: center;
+}
+
+#enter {
+    border: yellow solid 2px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+}
+
+#enter:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#enter > a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item > a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+#unauth_button {
+    display: none;
+}
+
+#auth_button {
+    display: none;
+}
+
+
+/* drop down menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+.dropbtn {
+    border: yellow solid 2px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(225,225,225);
+    width: 120px;
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.dropdown:hover{
+    background-color: rgb(225,225,225);
+}
+
+
+#page_footer {
+    display: flex;
+    background-color: rgb(49, 52, 54);
+    color: rgb(114, 120, 125);
+    height: 70px;
+}
+
+#page_content {
+    background-color: rgb(247, 247, 247);
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(14, 186, 197);
+    color: white;
+    padding-top: 5px;
+    border-radius: 0 5px 5px 0;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: row;
+}
+
+.input_text {
+    direction: rtl;
+    width: 240px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid white;
+}
+
+#page_title {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+#welcome1 {
+    font-size: 200%;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    direction: rtl;
+}
+
+#welcome2 {
+    font-size: 200%;
+    margin-bottom: 40px;
+    direction: rtl;
+    display: none;
+}
+
+#balance_text {
+    margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    direction: rtl;
+}
+
+#balance_increment {
+    margin-bottom: 40px;
+    background-color: rgb(255, 200, 10);
+    border: 1px solid rgb(255, 200, 10);
+    color: black;
+    border-radius: 24px;
+    width: 100px;
+    height: 25px;
+    /*font-size: 16px;*/
+    font-family: "B Yekan", serif;
+}
+
+#balance_increment:hover {
+    cursor: pointer;
+}
+
+#tab {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#profile1 {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    color: black;
+    border-radius: 0 24px 24px 0;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#receipt1 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    color: rgb(138, 138, 138);
+    border-radius: 24px 0 0 24px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#receipt2 {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    color: black;
+    border-radius: 24px 0 0 24px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#profile2 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    color: rgb(138, 138, 138);
+    border-radius: 0 24px 24px 0;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#profile1:hover, #profile2:hover, #receipt1:hover, #receipt2:hover {
+    cursor: pointer;
+}
+
+
+#submit_button {
+    margin-top: 40px;
+    background-color: rgb(255, 200, 10);
+    border: 1px solid rgb(255, 200, 10);
+    color: black;
+    border-radius: 24px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#submit_button:hover {
+    cursor: pointer;
+}
+
+
+#part1 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+#part2 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+}
+
+#part3 {
+
+}
+
+.first_part {
+    margin-left: 10px;
+}
+
+#form_input_3 {
+    display: flex;
+}
+
+#password_unval, #password_val {
+    direction: rtl;
+    width: 587px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid white;
+}
+
+#address_unval, #address_val {
+    direction: rtl;
+    width: 587px;
+    height: 80px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid white;
+}
+
+#form_input_3 > label {
+    height: 55px;
+    padding-top: 30px;
+}
+
+/*#######################*/
+
+table {
+    direction: rtl;
+    border-collapse: collapse;
+    background-color: white;
+    display: none;
+}
+
+td {
+    border-bottom: 1px solid darkgray;
+    padding: 20px 50px 20px 50px;
+}
+
+th {
+    border-bottom: 1px solid darkgray;
+    padding: 15px;
+    color: darkgray;
+}
+
+/*##############################*/
+#password_hint #name_hint #family_hint #address_hint {
+    display: none;
+}
+
+#password_val:focus, #address_val:focus,
+#user_name_val:focus, #user_family_val:focus {
+    border: 4px solid lightgreen;
+}
+
+#password_unval:focus, #address_unval:focus,
+#user_name_unval:focus, #user_family_unval:focus {
+    border: 4px solid darkred;
+}
+
+/*######################*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    height: 150px;
+
+    border-radius: 24px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    padding-left: 420px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+

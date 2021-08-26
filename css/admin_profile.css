@@ -1,0 +1,578 @@
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.main-component {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1280px;
+}
+
+#page_menu {
+    background-color: white;
+    height: 65px;
+    display: flex;
+}
+
+#logo {
+    font-size: 120%;
+    font-weight: bold;
+    color: rgb(255, 105, 180);
+}
+
+#page_menu > div {
+    width: 100px;
+    margin: 25px;
+    text-align: center;
+}
+
+#enter {
+    border: yellow solid 2px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+}
+
+#enter:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#enter > a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item > a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    background-color: rgb(0, 255, 255);
+    cursor: pointer;
+}
+
+#unauth_button {
+    display: none;
+}
+
+#admin_auth_button {
+    display: none;
+}
+
+
+/* drop down menu*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+
+.dropbtn {
+    border: yellow solid 2px;
+    background-color: white;
+    color: black;
+    border-radius: 24px;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(225, 225, 225);
+    width: 120px;
+    z-index: 1;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(247, 247, 247);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background-color: rgb(225, 225, 225);
+}
+
+
+#page_footer {
+    display: flex;
+    background-color: rgb(49, 52, 54);
+    color: rgb(114, 120, 125);
+    height: 70px;
+}
+
+#page_content_1 {
+    background-color: rgb(247, 247, 247);
+}
+
+#page_content_2 {
+    background-color: rgb(247, 247, 247);
+    height: 80vh;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page_content_3 {
+    background-color: rgb(247, 247, 247);
+    height: 80vh;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#page_content_header {
+    background-color: rgb(247, 247, 247);
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 200%;
+    margin-bottom: 40px;
+    direction: rtl;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+#products_list_1 {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    color: black;
+    border-radius: 0 24px 24px 0;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#cat_list_1 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    border-left: 1px solid rgb(247, 247, 247);
+    color: rgb(138, 138, 138);
+    /*border-radius: 24px 0 0 24px;*/
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#receipt_1 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    border-right: 1px solid rgb(247, 247, 247);
+    color: rgb(138, 138, 138);
+    border-radius: 24px 0 0 24px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#products_list_2 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    color: rgb(138, 138, 138);
+    border-radius: 0 24px 24px 0;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#cat_list_2 {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    color: black;
+    /*border-radius: 24px 0 0 24px;*/
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#receipt_2 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    color: rgb(138, 138, 138);
+    border-radius: 24px 0 0 24px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#products_list_3 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    border-left: 1px solid rgb(247, 247, 247);
+    color: rgb(138, 138, 138);
+    border-radius: 0 24px 24px 0;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#cat_list_3 {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(238, 238, 238);
+    border-right: 1px solid rgb(247, 247, 247);
+    color: rgb(138, 138, 138);
+    /*border-radius: 24px 0 0 24px;*/
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#receipt_3 {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
+    color: black;
+    border-radius: 24px 0 0 24px;
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#products_list_1:hover, #products_list_2:hover, #products_list_3:hover {
+    cursor: pointer;
+}
+
+#cat_list_1:hover, #cat_list_2:hover, #cat_list_3:hover {
+    cursor: pointer;
+}
+
+#receipt_1:hover, #receipt_2:hover, #receipt_3:hover {
+    cursor: pointer;
+}
+
+#insert_button_merch {
+    margin-bottom: 30px;
+    background-color: rgb(0, 157, 255);
+    border: 1px solid rgb(0, 157, 255);
+    color: white;
+    border-radius: 24px;
+    width: 180px;
+    height: 40px;
+    box-shadow: 3px 3px gray;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#insert_button_merch:hover {
+    cursor: pointer;
+}
+
+#insert_button_cat {
+    margin-bottom: 30px;
+    background-color: rgb(0, 157, 255);
+    border: 1px solid rgb(0, 157, 255);
+    color: white;
+    border-radius: 24px;
+    width: 180px;
+    height: 40px;
+    box-shadow: 3px 3px gray;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+#insert_button_cat:hover {
+    cursor: pointer;
+}
+
+
+#merchs_container {
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#merchs_container > div {
+    width: 24%;
+    height: 45%;
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+}
+
+#merchs_container > div > img {
+    width: 150px;
+    height: 150px;
+    align-content: center;
+}
+
+#merchs_container > div > p {
+    text-align: right;
+}
+
+.product_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product_price {
+    direction: rtl;
+    margin-top: 35px;
+}
+
+.button_buy {
+    background-color: rgb(0, 157, 255);
+    color: white;
+    border-radius: 24px;
+    width: 120px;
+    height: 40px;
+    box-shadow: 3px 3px gray;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+    margin-top: 25px;
+}
+
+.button_buy:hover {
+    cursor: pointer;
+}
+
+.product_name {
+    font-size: 120%;
+}
+
+.product_category {
+    color: gray;
+    margin-bottom: 70px;
+}
+
+.product_count {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 24px;
+    box-shadow: 3px 3px gray;
+    color: blue;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-left: -35px;
+    margin-top: -35px;
+}
+
+
+/*###########################*/
+
+/* 2 */
+table {
+    direction: rtl;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td {
+    border-bottom: 1px solid darkgray;
+    padding: 20px 55px 20px 55px;
+}
+
+th {
+    border-bottom: 1px solid darkgray;
+    /*padding: 15px;*/
+    padding: 20px 55px 20px 55px;
+    color: darkgray;
+}
+
+.edit {
+    background-color: white;
+    border: 2px solid white;
+    margin-left: 30px;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.delete {
+    background-color: white;
+    border: 2px solid white;
+    font-size: 16px;
+    font-family: "B Yekan", serif;
+}
+
+.edit:hover {
+    color: rgb(14, 186, 197);
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: rgb(14, 186, 197);
+    cursor: pointer;
+}
+
+/* 3 */
+.form_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.input_text {
+    direction: rtl;
+    width: 340px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid white;
+}
+
+label {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(14, 186, 197);
+    color: white;
+    padding-top: 5px;
+    border-radius: 0 5px 5px 0;
+}
+
+/*######################*/
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 300px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    height: 150px;
+    border-radius: 24px;
+}
+
+#merch_modal_content {
+    height: 410px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    padding-left: 420px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*######################################*/
+/*// modal components */
+.modal_textbox {
+    margin: 20px 20px 0 80px;
+    height: 27px;
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 0;
+}
+
+.modal_label {
+    border-radius: 0;
+}
+
+#merch_modal_content > p {
+    margin-left: 150px;
+}
+
+#merch_modal_content > button {
+    background-color: blue;
+    color: white;
+    border-radius: 24px;
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* insert button visible*/
+#modal_merch_insert_1 {
+    display: block;
+    margin-left: 180px;
+}
+
+#modal_merch_update_2 {
+    display: none;
+    margin-left: 0px;
+}
+
+#modal_merch_delete_2 {
+    display: none;
+    margin-left: 0px;
+}
+
+/* update/delete button visible*/
+#modal_merch_insert_2 {
+    display: none;
+    margin-left: 0px;
+}
+
+#modal_merch_update_1 {
+    display: block;
+    margin-left: 180px;
+}
+
+#modal_merch_delete_1 {
+    display: block;
+    margin-left: 180px;
+}
